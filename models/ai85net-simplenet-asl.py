@@ -18,7 +18,7 @@ from torch import nn
 import ai8x
 
 
-class AI85SimpleNet(nn.Module):
+class AI85SimpleNetASL(nn.Module):
     """
     SimpleNet v1 Model with BatchNorm
     """
@@ -75,12 +75,12 @@ class AI85SimpleNet(nn.Module):
         return x
 
 
-def ai85simplenet(pretrained=False, **kwargs):
+def ai85simplenetasl(pretrained=False, **kwargs):
     """
     Constructs a SimpleNet v1 model.
     """
     assert not pretrained
-    return AI85SimpleNet(**kwargs)
+    return AI85SimpleNetASL(**kwargs)
 
 
 models = [
