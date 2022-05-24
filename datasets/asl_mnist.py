@@ -11,7 +11,7 @@ def asl_get_dataset(data, load_train=True, load_test=True):
 	(data_dir, args) = data
 	
 	training_data_path = os.path.join(data_dir, "sign_mnist_train")
-	test_data_path = os.join(data_dir, "sign_mnist_test")
+	test_data_path = os.path.join(data_dir, "sign_mnist_test")
 
 	train_dataset = torchvision.datasets.ImageFolder(
 		root=training_data_path,
